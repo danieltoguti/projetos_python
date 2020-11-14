@@ -37,6 +37,7 @@ class AcerteNumero:
                             self.tentar_novamente = False
                             print('Parabéns Você ganhou!')
                             break
+                        
         except :
             print("Digite um número inteiro!")
             self.iniciar()
