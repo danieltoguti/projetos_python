@@ -12,20 +12,37 @@ class MediaFinal:
         acs.sort()
         acs.pop(0)
         mediaAcs = sum(acs) / 4
-        ponderadaAcs = mediaAcs / 2     
-
+        ponderadaAcs = mediaAcs / 2
+        
+        print()
+        print('**********************************************************')
+        print('**********************************************************')
+        print()
         print(f' Sua média das acs da disciplina {nome} é: {mediaAcs}')
-        print(f' Sua média ponderada das acs da disciplina {nome} é: {ponderadaAcs}')       
+        print(f' Sua média ponderada das acs da disciplina {nome} é: {ponderadaAcs}')
+        print()
+        print('**********************************************************')
+        print('**********************************************************')
+        print()
 
         self.prova = float(input('Digite sua nota da prova: '))
         notaFinal = ponderadaAcs + (self.prova / 2)
-            
+
+        print()
+        print('**********************************************************')
+        print('**********************************************************')  
+        print()
         print(f'Sua nota final da disciplina {nome} é: {notaFinal} ')
 
         if notaFinal >= 6:
             print('Parabéns você foi aprovado(a)!!')
         else:
             print('Infelizmente você foi reprovado!')
+
+        print()
+        print('**********************************************************')
+        print('**********************************************************')
+
 
 
 iniciar = MediaFinal()
